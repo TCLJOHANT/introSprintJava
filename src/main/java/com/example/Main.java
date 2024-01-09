@@ -7,7 +7,6 @@ public class Main {
     public static void main(String[] args) {
         //CREACION OBJETO FORMA NORMAL
             // Calculadora calIntanciaNormal = new Calculadora();
-
          //CREACION DE OBJETO COMO LO HACE SPRING POR DEFECTO USANDO SINGLETON (QUE USA EL MISMO OBJETO Y NO CREA UNO NUEVO)
             ApplicationContext context =new ClassPathXmlApplicationContext("beans.xml");
             Calculadora  calculadora = (Calculadora) context.getBean("calculadora");
